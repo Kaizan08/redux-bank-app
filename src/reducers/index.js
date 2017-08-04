@@ -24,9 +24,8 @@ const reducer = function(state = initialState, action) {
             return newState
         case WITHDRAW_FUNDS:
             newState = _.cloneDeep(state);
-            const userIdx = newState.users.findIndex(user => user._id === newState.selectedUser);
-            const accountIdx = newState.users[userIdx].accounts.findIndex(account => account.id === newState.selectedAccount);
-            newState.users[userIdx].accounts[accountIdx].balance -= action.payload;  
+            const account = newState.selectedAccount;
+            account.balance -= action.payload;  
             return newState                            
         default:
             return state;

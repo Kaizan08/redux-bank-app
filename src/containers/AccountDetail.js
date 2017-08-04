@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
-import { selectAccount }  from '../actions/index';
+import Transaction from './Transaction';
 
 class AccountDetail extends Component {
     render() {
@@ -20,7 +20,7 @@ class AccountDetail extends Component {
               ${this.props.account.balance}
             </div>
           </div>
-          {/*putting in withdraw button here  */}
+          <Transaction/>
           <Link className="btn btn-primary" to="/users" >Back to List of Users</Link>
         </div> 
  
@@ -41,7 +41,6 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch){
   return bindActionCreators({
-        selectAccount: selectAccount
     }, dispatch);
 }
 

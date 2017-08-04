@@ -45,6 +45,7 @@ class UserDetail extends Component {
             </div>
             {accounts}
           </div>
+           
           <Link className="btn btn-primary" to="/users" >Back to List of Users</Link>
         </div>
 
