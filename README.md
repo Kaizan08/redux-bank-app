@@ -3,8 +3,11 @@
 Create an application using React, React Router v4, and Redux to mimic online banking.
 
 For this project, please download the following files:
-Download Starter Files
-bank-app-starter-files-1.zip (6 KB)
+<ul>
+<li>Download Starter Files</li>
+<li>bank-app-starter-files-1.zip (6 KB)</li>
+</ul>
+
 To get started you will need to use create-react-app to quickly scaffold a project. You should migrate your components into a components folder in the src directory and the styles into a styles folder in the src directory. Link up all pages to make sure they working and test using npm run start in the console, use Ctrl+c to exit.
 
 You will need use npm install --save redux, npm install --save react-redux, and npm install --save react-router-dom in the terminal to save Redux to your project dependencies and make it available for import.
@@ -16,18 +19,19 @@ You will need to create a data folder and you should use the users.js from the s
 You will need to create containers, actions, and reducers folders as well. You will need to add the corresponding files from the starter files to the folders in your application (for example actions/index.js in the starter files will need to be copied or moved into src/actions/index.js in your project). Be sure to look at these files for hints and placement of certain requirements.
 
 You should have the following separate components:
+<ul>
+<li>Components: App.js</li>
 
-Components: App.js
+<li>Components: BaseLayout.js</li>
 
-Components: BaseLayout.js
+<li>Containers: UserList.js</li>
 
-Containers: UserList.js
+<li>Containers: UserDetail.js</li>
 
-Containers: UserDetail.js
+<li>Containers: AccountDetail.js</li>
 
-Containers: AccountDetail.js
-
-Containers: Transaction.js
+<li>Containers: Transaction.js</li>
+</ul>
 
 You should create a BaseLayout navigation component that wraps the application and provides a navbar for your application. Hint: This should wrap your <Switch> component in your index.js file and allow for {this.props.children} so other components/routes can be rendered within it.
 
